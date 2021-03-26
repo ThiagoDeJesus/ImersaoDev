@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+
+body {
+    background-color: #233E6E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 1em;
+    color: white;
+}
+
+.ulSuperior {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 2% auto 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 1;
+    width: 25%;
+    height: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    background-color: #3C86F9;
+    margin: 0 2%;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 0.5em;
+}
+
+.alternar {
+    display: inline-block;
+    position: absolute;
+    top: 51%;
+    right: 20%;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.ulInferior {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    text-align: center;
+    margin: 3% auto 0;
+    padding: 0;
+}
+
+.anosLuz {
+    width: 100%;
+    color: white;
+    margin: 0;
+    background-color: #167BF7;
+}

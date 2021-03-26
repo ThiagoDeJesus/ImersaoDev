@@ -1,0 +1,17 @@
+footer {
+    background-color: #167BF7;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
