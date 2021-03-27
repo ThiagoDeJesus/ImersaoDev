@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Câmbio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+    
+</head>
+<body>
+    <header>
+        <a href="https://www.alura.com.br/" target="_blank"><img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="logo-alura"></a>
+        <a href="https://imersao.dev/" target="_blank"><img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" alt="" class="imersaoDev-logo"></a>
+        <nav>
+            <a href="../index.html"><button class="home">Home</button></a>
+            <div class="dropdown">
+                <button class="dropbtn">Desafios</button>
+                <div class="dropdown-content">
+                  <a href="desafio1.html">Conversor</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Aqui nós convertemos algumas coisas</h1>
+        <hr>
+        <h2>Conversor de moedas&#128176;</h2>
+        <ul class="ulSuperior">
+            <li>
+                <p><strong>$ DOLAR</strong></p>
+                <p class="alternar" onclick="alternarDolar()">&#11136;</p>
+                <p class="pDolarToReal">Dolar <input type="text" class="dolarToReal" value=0></p>
+                <p><input type="button" value="Converter" onclick="converterDolar()"></p>
+                <p class="pRealToDolar">Real <input type="text" class="realToDolar" value=0></p>
+            </li>
+            <li>
+                <p><strong>€ EURO</strong></p>
+                <p class="alternar" onclick="alternarEuro()">&#11136;</p>
+                <p class="pEuroToReal">Euro <input type="text" class="euroToReal" value=0></p>
+                <p><input type="button" value="Converter" onclick="converterEuro()"></p>
+                <p class="pRealToEuro">Real <input type="text" class="realToEuro" value=0></p>
+            </li>
+            <li>
+                <p><strong>¥ IENE</strong></p>
+                <p class="alternar" onclick="alternarIene()">&#11136;</p>
+                <p class="pIeneToReal">Iene <input type="text" class="ieneToReal" value=0></p>
+                <p><input type="button" value="Converter" onclick="converterIene()"></p>
+                <p class="pRealToIene">Real <input type="text" class="realToIene" value=0></p>
+            </li>
+            <li>
+                <p><strong>£ LIBRA</strong></p>
+                <p class="alternar" onclick="alternarLibra()">&#11136;</p>
+                <p class="pLibraToReal">Libra <input type="text" class="libraToReal" value=0></p>
+                <p><input type="button" value="Converter" onclick="converterLibra()"></p>
+                <p class="pRealToLibra">Real <input type="text" class="realToLibra" value=0></p>
+            </li>
+        </ul>
+        <h2>Outros conversores</h2>
+        
+        <ul class="ulInferior">
+            <li class="anosLuz">
+                <p>Distância em anos luz <input type="text"></p>
+                <p><input type="button" value="Converter" onclick="emBreve();"></p>
+                <p>Distância em KM <input type="text"></p>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>Site desenvolvido por <a href="https://github.com/ThiagoDeJesus" target="_blank">Thiago de Jesus</a></p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
