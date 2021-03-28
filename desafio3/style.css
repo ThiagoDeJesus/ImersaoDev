@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 600px;
+    background-image: url('imagens/matrix.jpg');
+    background-color: #000000;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+  
+.container {
+    text-align: center;
+    padding: 20px;
+    height: 82vh;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.sub-container {
+    background: #233E6E;
+    border-radius: 20px;
+    height: 82vh;
+    width: 60vw;
+    margin: auto;
+}
+
+.sub-container p, h1 {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+  
+.page-title {
+    color: white;
+    margin: 0 0 5px;
+}
+  
+.informacoes {
+    color: #ffffff;
+    margin-top: 4px;
+    display: inline-block;
+    padding: 0 6px;
+}
+
+.input-numero, .chute {
+    width: 170px;
+    background: none;
+    color: white;
+    border: solid 2px green;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.registrar {
+    color: white;
+    background: black;
+    border: solid 2px green;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.registrar:hover {
+    border-color: darkgreen;
+}
+
+.registrar:active {
+    color: rgb(163, 162, 162);
+}
+  
+@media (max-height: 500px) {
+    body {
+      min-height:800px;
+    }
+}
