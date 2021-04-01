@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImersaoDev - Desafio 5</title>
+    <title>Imersão Dev - Aula 06</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../footer.css">
@@ -22,27 +22,49 @@
                   <a href="../desafio2/desafio2.html">Pokemon</a>
                   <a href="../desafio3/desafio3.html">Mentalista</a>
                   <a href="../desafio4/desafio4.html">Aluraflix</a>
-                  <a href="desafio5.html">Aluraflix 2.0</a>
+                  <a href="../desafio5/desafio5.html">Aluraflix 2.0</a>
+                  <a href="desafio6.html">Tabela de classificação</a>
                 </div>
               </div>
         </nav>
     </header>
     <main>
-        <div class="container">
-            <h1 class="page-title">
-                Aluraflix
-            </h1>
-            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
-                alt="">
-            <p class="page-subtitle">
-                Qual seu filme favorito?
-            </p>
-            <div class="form-wrapper">
-                <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
-                <button onClick="adicionarFilme()">Adicionar Filme</button>
-            </div>
-        </div>
-        <div id="listaFilmes"></div>
+        <h1>Tabela de classificação</h1>
+
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Vitórias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+                <th>Pontos</th>
+                <th colspan=3>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaJogadores">
+            <!--   <tr>
+    <td>Paulo</td>
+    <td>2</td>
+    <td>6</td>
+    <td>1</td>
+    <td>7</td>
+    <td><button onClick="adicionarVitoria()">Vitória</button></td>
+    <td><button onClick="adicionarEmpate()">Empate</button></td>
+    <td><button onClick="adicionarDerrota()">Derrota</button></td>
+  </tr>
+  <tr>
+    <td>Rafa</td>
+    <td>4</td>
+    <td>4</td>
+    <td>2</td>
+    <td>15</td>
+    <td><button onClick="adicionarVitoria()">Vitória</button></td>
+    <td><button onClick="adicionarEmpate()">Empate</button></td>
+    <td><button onClick="adicionarDerrota()">Derrota</button></td>
+  </tr> -->
+        </tbody>
+    </table>
     </main>
     <footer>
         <p>Site desenvolvido por <a href="https://github.com/ThiagoDeJesus" target="_blank">Thiago de Jesus</a></p>

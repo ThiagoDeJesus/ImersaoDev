@@ -19,11 +19,15 @@
             <div class="dropdown">
                 <button class="dropbtn">Desafios</button>
                 <div class="dropdown-content">
-                  <a href="desafio1.html">Conversor</a>
-                  <a href="../desafio2/desafio2.html">Pokemon</a>
-                  <a href="../desafio3/desafio3.html">Mentalista</a>
-                </div>
-              </div>
+                    <a href="desafio1.html">Conversor</a>
+                    <a href="../desafio2/desafio2.html">Pokemon</a>
+                    <a href="../desafio3/desafio3.html">Mentalista</a>
+                    <a href="../desafio4/desafio4.html">Aluraflix</a>
+                    <a href="../desafio5/desafio5.html">Aluraflix 2.0</a>
+                    <a href="../desafio6/desafio6.html">Tabela de classificação</a>
+                    <a href="../desafio7/desafio7.html">Trunfo</a>
+                    <a href="../desafio8/desafio8.html">Super Trunfo</a>
+                  </div>
         </nav>
     </header>
     <main>
@@ -31,44 +35,46 @@
         <hr>
         <h2>Conversor de moedas&#128176;</h2>
         <ul class="ulSuperior">
-            <li>
-                <p><strong>$ DOLAR</strong></p>
+            <li class="dolar">
+                <p class="AlterarCor"><strong>$ DOLAR</strong></p>
                 <p class="alternar" onclick="alternarDolar()">&#11136;</p>
                 <p class="pDolarToReal">Dolar <input type="text" class="dolarToReal" value=0></p>
                 <p><input type="button" value="Converter" onclick="converterDolar()"></p>
-                <p class="pRealToDolar">Real <input type="text" class="realToDolar" value=0></p>
+                <p class="pRealToDolar" class="pAlterarCor">Real <input type="text" class="realToDolar" value=0></p>
             </li>
-            <li>
-                <p><strong>€ EURO</strong></p>
+            <li class="euro">
+                <p class="pAlterarCor"><strong>€ EURO</strong></p>
                 <p class="alternar" onclick="alternarEuro()">&#11136;</p>
-                <p class="pEuroToReal">Euro <input type="text" class="euroToReal" value=0></p>
+                <p class="pEuroToReal" class="pAlterarCor">Euro <input type="text" class="euroToReal" value=0></p>
                 <p><input type="button" value="Converter" onclick="converterEuro()"></p>
-                <p class="pRealToEuro">Real <input type="text" class="realToEuro" value=0></p>
+                <p class="pRealToEuro" class="pAlterarCor">Real <input type="text" class="realToEuro" value=0></p>
             </li>
-            <li>
-                <p><strong>¥ IENE</strong></p>
+            <li class="iene">
+                <p class="pAlterarCor"><strong>¥ IENE</strong></p>
                 <p class="alternar" onclick="alternarIene()">&#11136;</p>
-                <p class="pIeneToReal">Iene <input type="text" class="ieneToReal" value=0></p>
+                <p class="pIeneToReal" class="pAlterarCor">Iene <input type="text" class="ieneToReal" value=0></p>
                 <p><input type="button" value="Converter" onclick="converterIene()"></p>
-                <p class="pRealToIene">Real <input type="text" class="realToIene" value=0></p>
+                <p class="pRealToIene" class="pAlterarCor">Real <input type="text" class="realToIene" value=0></p>
             </li>
-            <li>
-                <p><strong>£ LIBRA</strong></p>
+            <li class="libra">
+                <p class="pAlterarCor"><strong>£ LIBRA</strong></p>
                 <p class="alternar" onclick="alternarLibra()">&#11136;</p>
-                <p class="pLibraToReal">Libra <input type="text" class="libraToReal" value=0></p>
+                <p class="pLibraToReal" class="pAlterarCor">Libra <input type="text" class="libraToReal" value=0></p>
                 <p><input type="button" value="Converter" onclick="converterLibra()"></p>
-                <p class="pRealToLibra">Real <input type="text" class="realToLibra" value=0></p>
+                <p class="pRealToLibra" class="pAlterarCor">Real <input type="text" class="realToLibra" value=0></p>
             </li>
         </ul>
         <h2>Outros conversores</h2>
         
         <ul class="ulInferior">
             <li class="anosLuz">
-                <p>Distância em anos luz <input type="text"></p>
-                <p><input type="button" value="Converter" onclick="emBreve();"></p>
-                <p>Distância em KM <input type="text"></p>
+                <p class="pAnosLuzToKm">Distância em anos luz <input type="text" class="anosLuzToKm"></p>
+                <p class="alternar" onclick="alternarAnosLuz()">&#11136;</p>
+                <p><input type="button" value="Converter" onclick="converterAnosLuz();"></p>
+                <p class="pKmToAnosLuz">Distância em KM <input type="text" class="kmToAnosLuz"></p>
             </li>
         </ul>
+        <p class="info-valores">Valores monetários referentes ao dia 31/03/2021</p>
     </main>
     <footer>
         <p>Site desenvolvido por <a href="https://github.com/ThiagoDeJesus" target="_blank">Thiago de Jesus</a></p>

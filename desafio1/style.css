@@ -27,6 +27,8 @@ h2 {
     text-align: center;
     margin: 2% auto 0;
     padding: 0;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 li {
@@ -39,12 +41,28 @@ li {
     height: 250px;
     box-sizing: border-box;
     text-align: center;
-    color: white;
-    background-color: #3C86F9;
+    color: black;
     margin: 0 2%;
     border-radius: 20px;
     position: relative;
     margin-top: 0.5em;
+}
+
+
+.dolar {
+    background-image: url(https://conteudo.imguol.com.br/c/noticias/6c/2018/11/13/dolar-dolar-cambio-real-estados-unidos-bolsa-de-valores-mercado-bovespa-ibovespa-b3-1542152549651_v2_450x450.jpg);
+}
+
+.euro {
+    background-image: url(https://www.romapravoce.com/wp-content/uploads/2021/01/euro_hoje.jpg);
+}
+
+.iene {
+    background-image: url(https://www.tororadar.com.br/hubfs/iene.jpg);
+}
+
+.libra {
+    background-image: url(https://www.remessaonline.com.br/blog/wp-content/uploads/2019/06/tendencias-para-a-libra-esterlina.jpg);
 }
 
 .alternar {
@@ -63,11 +81,25 @@ li {
     text-align: center;
     margin: 3% auto 0;
     padding: 0;
+    
+}
+
+.ulInferior .alternar {
+    top: 42%;
+    right: 40%;
 }
 
 .anosLuz {
     width: 100%;
     color: white;
     margin: 0;
-    background-color: #167BF7;
+    background-image: url(https://i.imgur.com/yMavMLb.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.info-valores {
+    text-align: center;
+    color: white;
+    margin: 1em;
 }

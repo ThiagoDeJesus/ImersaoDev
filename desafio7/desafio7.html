@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImersaoDev - Desafio 5</title>
+    <title>Imersão Dev - Aula 06</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../footer.css">
@@ -22,27 +22,27 @@
                   <a href="../desafio2/desafio2.html">Pokemon</a>
                   <a href="../desafio3/desafio3.html">Mentalista</a>
                   <a href="../desafio4/desafio4.html">Aluraflix</a>
-                  <a href="desafio5.html">Aluraflix 2.0</a>
+                  <a href="../desafio5/desafio5.html">Aluraflix 2.0</a>
+                  <a href="../desafio6/desafio6.html">Tabela de classificação</a>
+                  <a href="desafio7.html">Trunfo</a>
                 </div>
               </div>
         </nav>
     </header>
     <main>
         <div class="container">
-            <h1 class="page-title">
-                Aluraflix
-            </h1>
-            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
                 alt="">
-            <p class="page-subtitle">
-                Qual seu filme favorito?
-            </p>
-            <div class="form-wrapper">
-                <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
-                <button onClick="adicionarFilme()">Adicionar Filme</button>
-            </div>
+            <h1 class="page-title">Super Trunfo</h1>
+    
+            <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+    
+            <form id="form">
+                <h2>Escolha o seu atributo</h2>
+                <div class="opcoes" id="opcoes"></div>
+                <button type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+            </form>
         </div>
-        <div id="listaFilmes"></div>
     </main>
     <footer>
         <p>Site desenvolvido por <a href="https://github.com/ThiagoDeJesus" target="_blank">Thiago de Jesus</a></p>

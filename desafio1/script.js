@@ -1,15 +1,18 @@
-var dolar = 5.51;
+var dolar = 5.63;
 
-var euro = 6.58;
+var euro = 6.61;
 
 var iene = 0.051;
 
-var libra = 7.64;
+var libra = 7.77;
+
+var anosLuz = 9460730777119.56;
 
 var alternaDolar = 0;
 var alternaEuro = 0;
 var alternaIene = 0;
 var alternaLibra = 0;
+var alternaAnosLuz = 0;
 
 function converterDolar() {
     var dolarToReal = document.querySelector(".dolarToReal");
@@ -131,6 +134,30 @@ function alternar(p1, p2) {
     invertP2.innerHTML = invertPExtra;
 }
 
-function emBreve() {
-    alert("Esta função será adicionada em breve.")
+function converterAnosLuz() {
+    var anosLuzToKm = document.querySelector(".anosLuzToKm");
+    var kmToAnosLuz = document.querySelector(".kmToAnosLuz");
+
+    if (alternaAnosLuz == 0)
+    {
+        anosLuzToKm.value = parseFloat(anosLuzToKm.value);
+        kmToAnosLuz.value = (anosLuzToKm.value * anosLuz) + " km";
+    }
+    else
+    {
+        kmToAnosLuz.value = parseFloat(kmToAnosLuz.value);
+        anosLuzToKm.value = (kmToAnosLuz.value / anosLuz) + " ly";
+    }
+}
+
+function alternarAnosLuz() {
+    if (alternaAnosLuz == 0)
+    {
+        alternaAnosLuz = 1;
+    }
+    else
+    {
+        alternaAnosLuz = 0;
+    }
+    alternar(".pAnosLuzToKm", ".pKmToAnosLuz");
 }
